@@ -1,0 +1,36 @@
+container {
+	display: flex;
+}
+
+
+
+#bg {
+	width: 500px;
+	height: 1000px;
+	object-fit: cover;
+}
+
+.logo_bg{
+	position: absolute;
+	top: 200px;
+	display: flex;
+	background: rgba(0, 0, 0, 0.5);
+	width: 500px;
+	height: 200px;
+	justify-content: center;
+/*	opacity: 60%;*/
+}
+
+.logo {
+	align-content: center;
+	color: white;
+	font-size: 5rem;
+}
+
+#credit {
+	position: relative;
+	bottom: 50px;
+	color: white;
+	text-align: center;
+	opacity: 70%;
+}
