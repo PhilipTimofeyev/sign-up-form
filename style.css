@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Norse-Bold";
+  src: url("fonts/Norse-Bold.otf");
+}
+
 container {
 	display: flex;
 }
@@ -10,21 +15,22 @@ container {
 	object-fit: cover;
 }
 
-.logo_bg{
-	position: absolute;
-	top: 200px;
+.logo_bg {
 	display: flex;
-	background: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	background: rgba(0, 0, 0, 0.6);
+	top: 200px;
 	width: 500px;
-	height: 200px;
+	height: 120px;
 	justify-content: center;
-/*	opacity: 60%;*/
+	padding: 20px 0px;
 }
 
 .logo {
 	align-content: center;
 	color: white;
-	font-size: 5rem;
+	font-size: 75px;
+	font-family: "Norse-Bold";
 }
 
 #credit {
