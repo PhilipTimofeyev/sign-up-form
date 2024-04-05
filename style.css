@@ -14,13 +14,11 @@ container {
 	height: 100vh;
 	width: 100vw;
 /*	background: yellow;*/
-/*	height:auto;	*/
 
 }
 
 .left {
 	display: flex;
-/*	height: 100vh;*/
 	width: 32%;
 /*	background: grey;*/
 }
@@ -37,15 +35,6 @@ object-fit: cover;
 	object-position: center;
 }
 
-
-
-#bg {
-/*	display: flex;
-/*max-width: 40%;*/
-/*	width: 500px;*/
-/*	height: auto;*/
-/*	object-fit: fill;*/
-}
 
 .logo_bg {
 	display: flex;
@@ -78,7 +67,7 @@ object-fit: cover;
 	display: flex;
 	flex-direction: column;
 	width: 68%;
-	font-family: Roboto, sans-serif;;
+	font-family: Roboto, sans-serif;
 /*	background: orange;*/
 }
 
@@ -86,18 +75,18 @@ object-fit: cover;
 	display: flex;
 	flex-direction: column;
 	gap: 25px;
-	background: #f2f0f0;
-	padding: 180px 270px 80px 60px;
+	background: #f0f0f0;
+	padding: 180px 250px 80px 60px;
 	font-size: 2.2rem;
-	font-weight: 500;
+	font-weight: 700;
 }
 
 form {
 	display: flex;
 	font-size: 1.2rem;
-	color: darkblue;
 	flex-direction: column;
-	letter-spacing: 3px;
+	padding-bottom: 35px;
+	box-shadow: 1px 5px 5px lightgrey;
 /*	justify-content: center;*/
 }
 
@@ -110,32 +99,76 @@ h1 {
 .inputting {
 	display: flex;
 	margin-left: 3vw;
-	gap: 100px	;
+	gap: 18px	;
+	flex-direction: column;
 }
 
-.l_form, 
-.r_form  {
+.form_row_1, 
+.form_row_2,
+.form_row_3  {
+	display: flex;
+	gap: 100px;
+}
+
+label {
+	font-size: .9rem;
+	letter-spacing: 2px;
+	font-weight: 600;
+	color: #474540;
+}
+
+.block {
 	display: flex;
 	flex-direction: column;
-/*	gap: 10px;*/
 }
 
 
-input {
+.inputting input {
   width: 17vw;
+  font-size: 1.2rem;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
+  border-radius: 10px;
 }
 
-button {
+input:focus-visible {
+  outline: 2px solid blue;
+  border-radius: 3px;
+}
+
+.btn {
 	width: 14vw;
 	height: 5vh;
-	margin-left: 3vw;
-	margin: 2vh 3vw;
 	background-color: #596D48;
 	border-radius: 10px;
-	box-shadow: 1px 5px 5px grey;
+	box-shadow: 2px 5px 3px lightgrey;
+	font-size: 1.3rem;
+	color: white;
+	font-family: Roboto, sans-serif;
+	font-weight: 700;
+	margin-bottom: 3vh;
+}
 
+#login {
+	font-size: 1.3rem;
+}
+
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.bottom {
+	margin: 4vh 3vw;
+}
+
+input:invalid {
+  border: 2px dashed red;
+}
+
+.inputting input:valid {
+  border: 2px solid #E5E7EB;
 }
 
