@@ -53,18 +53,38 @@
 						</div>
 						<div class = 'block'>
 							<label for="user_password">CONFIRM PASSWORD</label>
-							<input type="password" id="user_password" name="confirm_password">
+							<input type="password" id="user_confirm_password" name="confirm_password" >
 						</div>
 					</div>
 				</div>
 				</form>
 				<div class = "bottom">
-					<!-- <button type="submit">Create Account</button> -->
 					<input type="submit" form="myform" value="Create Account" class='btn'/>
 					<p id='login'>Already have an account? <a href="url"> <b>Log in </b></a></p>
 				</div>
 			</div>
 		</div>
 	</container>
+
+	<script type="text/javascript">
+		let loginForm = document.getElementById("myform");
+
+		loginForm.addEventListener("submit", (e) => {
+		  e.preventDefault();
+
+		  let password = document.getElementById("user_password");
+		  let confirm_password = document.getElementById("user_confirm_password");
+
+		 	if (password.value == confirm_password.value) {
+		 		password.value = '';
+		 		confirm_password.value = ''
+		 	} else {
+		 		password.style.border="2px solid red";
+		 		confirm_password.style.border="2px solid red"
+		 		password.setCustomValidity("*Passwords do not match");
+		 	}
+
+		});
+	</script>
 </body>
 </html>
