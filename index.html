@@ -24,7 +24,7 @@
 			</div>
 			<div>
 				<h1> Let's do this! </h1>
-				<form>
+				<form id="myform" method="get" action="something.php">
 					<div class='inputting'>
 						<div class='form_row_1'>
 							<div class = 'block'>
@@ -55,28 +55,14 @@
 							<label for="user_password">CONFIRM PASSWORD</label>
 							<input type="password" id="user_password" name="confirm_password">
 						</div>
-						</div>
-<!-- 					<div class='l_form'>
-						<label for="first_name">FIRST NAME:</label>
-						<input type="text" id="first_name" name="first_name">
-						<label for="user_email">EMAIL:</label>
-						<input type="email" id="user_email" name="email">
-						<label for="user_password">PASSWORD:</label>
-						<input type="password" id="user_password" name="password">
 					</div>
-					<div class='r_form'>
-						<label for="first_name">LAST NAME:</label>
-						<input type="text" id="last_name" name="last_name">
-						<label for="phone">PHONE NUMBER:</label>
-						<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"/>
-						<label for="user_password">CONFIRM PASSWORD:</label>
-						<input type="password" id="user_password" name="confirm_password">
-					</div> -->
 				</div>
-
-				<button type="submit">Create Account</button>
-				<p>Already have an account? Log in</p>
 				</form>
+				<div class = "bottom">
+					<!-- <button type="submit">Create Account</button> -->
+					<input type="submit" form="myform" value="Create Account" class='btn'/>
+					<p id='login'>Already have an account? <a href="url"> <b>Log in </b></a></p>
+				</div>
 			</div>
 		</div>
 	</container>
